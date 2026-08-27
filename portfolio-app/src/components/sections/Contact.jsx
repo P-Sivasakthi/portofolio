@@ -19,12 +19,12 @@
 //     <section
 //       id="contact"
 //       style={{
-//         padding: "120px 0",
+//         padding: "70px 0",
 //         background: "#0f172a",
 //       }}
 //     >
 //       <Container maxWidth="md">
-//         {/* Heading */}
+//         {/* SECTION TITLE */}
 //         <Typography
 //           variant="h3"
 //           sx={{
@@ -41,159 +41,139 @@
 //           sx={{
 //             textAlign: "center",
 //             color: "#94A3B8",
-//             mb: 6,
-//             maxWidth: "650px",
+//             mb: 8,
+//             maxWidth: "700px",
 //             mx: "auto",
+//             lineHeight: 1.8,
 //           }}
 //         >
 //           Feel free to reach out for opportunities, collaborations,
 //           freelance projects, or technology discussions.
 //         </Typography>
 
-//         {/* Contact Card */}
+//         {/* CONTACT CARD */}
 //         <Paper
 //           elevation={0}
 //           sx={{
-//             p: { xs: 3, md: 5 },
+//             maxWidth: "900px",
+//             mx: "auto",
+
+//             p: {
+//               xs: 4,
+//               md: 5,
+//             },
+
 //             borderRadius: "20px",
+
 //             background: "rgba(255,255,255,0.03)",
-//             border: "1px solid rgba(255,255,255,0.08)",
+
+//             border:
+//               "1px solid rgba(255,255,255,0.08)",
+
 //             backdropFilter: "blur(10px)",
-//             textAlign: "center",
+
+//             transition: "all 0.3s ease",
+
+//             "&:hover": {
+//               border:
+//                 "1px solid rgba(56,189,248,0.25)",
+//             },
 //           }}
 //         >
-//           {/* Contact Details */}
-//           <Stack spacing={3} sx={{ mb: 5 }}>
-//             {/* Email */}
+//           {/* CONTACT INFO */}
+//           <Stack
+//             spacing={3}
+//             sx={{
+//               mb: 0.7,
+//             }}
+//           >
 //             <Box
 //               sx={{
 //                 display: "flex",
-//                 justifyContent: "center",
 //                 alignItems: "center",
-//                 gap: 1.5,
-//                 color: "#38BDF8",
+//                 justifyContent: "center",
+//                 gap: 2,
 //               }}
 //             >
-//               <FaEnvelope size={18} />
-//               <Typography sx={{ color: "#fff" }}>
-//                 yourmail@gmail.com
+//               <FaEnvelope
+//                 size={18}
+//                 color="#38BDF8"
+//               />
+
+//               <Typography
+//                 sx={{
+//                   color: "#fff",
+//                 }}
+//               >
+//                 sivasakthi.dev2025@gmail.com
 //               </Typography>
 //             </Box>
 
-//             {/* Phone */}
 //             <Box
 //               sx={{
 //                 display: "flex",
-//                 justifyContent: "center",
 //                 alignItems: "center",
-//                 gap: 1.5,
-//                 color: "#38BDF8",
+//                 justifyContent: "center",
+//                 gap: 2,
 //               }}
 //             >
-//               <FaPhone size={18} />
-//               <Typography sx={{ color: "#fff" }}>
-//                 +91 98765 43210
+//               <FaPhone
+//                 size={18}
+//                 color="#38BDF8"
+//               />
+
+//               <Typography
+//                 sx={{
+//                   color: "#fff",
+//                 }}
+//               >
+//                 +91 90253 18113
 //               </Typography>
 //             </Box>
 
-//             {/* LinkedIn */}
 //             <Box
 //               sx={{
 //                 display: "flex",
-//                 justifyContent: "center",
 //                 alignItems: "center",
-//                 gap: 1.5,
-//                 color: "#38BDF8",
+//                 justifyContent: "center",
+//                 gap: 2,
 //               }}
 //             >
-//               <FaLinkedin size={18} />
-//               <Typography sx={{ color: "#fff" }}>
-//                 linkedin.com/in/yourprofile
+//               <FaLinkedin
+//                 size={18}
+//                 color="#38BDF8"
+//               />
+
+//               <Typography
+//                 sx={{
+//                   color: "#fff",
+//                 }}
+//                 >
+//                   linkedin.com/in/yourprofile
 //               </Typography>
 //             </Box>
 
-//             {/* GitHub */}
 //             <Box
 //               sx={{
 //                 display: "flex",
-//                 justifyContent: "center",
 //                 alignItems: "center",
-//                 gap: 1.5,
-//                 color: "#38BDF8",
+//                 justifyContent: "center",
+//                 gap: 2,
 //               }}
 //             >
-//               <FaGithub size={18} />
-//               <Typography sx={{ color: "#fff" }}>
+//               <FaGithub
+//                 size={18}
+//                 color="#38BDF8"
+//               />
+
+//               <Typography
+//                 sx={{
+//                   color: "#fff",
+//                 }}
+//               >
 //                 github.com/yourusername
 //               </Typography>
 //             </Box>
-//           </Stack>
-
-//           {/* Action Buttons */}
-//           <Stack
-//             direction={{ xs: "column", sm: "row" }}
-//             spacing={2}
-//             justifyContent="center"
-//           >
-//             {/* Email */}
-//             <Button
-//               variant="contained"
-//               href="mailto:yourmail@gmail.com"
-//               startIcon={<FaEnvelope />}
-//               sx={{
-//                 background: "#38BDF8",
-//                 color: "#0f172a",
-//                 textTransform: "none",
-//                 fontWeight: 600,
-//                 px: 3,
-//                 "&:hover": {
-//                   background: "#0EA5E9",
-//                 },
-//               }}
-//             >
-//               Email Me
-//             </Button>
-
-//             {/* Call */}
-//             <Button
-//               variant="outlined"
-//               href="tel:+919876543210"
-//               startIcon={<FaPhone />}
-//               sx={{
-//                 color: "#38BDF8",
-//                 borderColor: "#38BDF8",
-//                 textTransform: "none",
-//                 fontWeight: 600,
-//                 px: 3,
-//                 "&:hover": {
-//                   borderColor: "#0EA5E9",
-//                   background: "rgba(56,189,248,0.08)",
-//                 },
-//               }}
-//             >
-//               Call Me
-//             </Button>
-
-//             {/* LinkedIn */}
-//             <Button
-//               variant="outlined"
-//               href="https://linkedin.com/in/yourprofile"
-//               target="_blank"
-//               startIcon={<FaLinkedin />}
-//               sx={{
-//                 color: "#38BDF8",
-//                 borderColor: "#38BDF8",
-//                 textTransform: "none",
-//                 fontWeight: 600,
-//                 px: 3,
-//                 "&:hover": {
-//                   borderColor: "#0EA5E9",
-//                   background: "rgba(56,189,248,0.08)",
-//                 },
-//               }}
-//             >
-//               LinkedIn
-//             </Button>
 //           </Stack>
 //         </Paper>
 //       </Container>
@@ -203,14 +183,12 @@
 
 // export default Contact;
 
-
 import {
   Box,
   Typography,
   Paper,
   Container,
   Stack,
-  Button,
 } from "@mui/material";
 
 import {
@@ -229,7 +207,8 @@ function Contact() {
         background: "#0f172a",
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
+
         {/* SECTION TITLE */}
         <Typography
           variant="h3"
@@ -273,32 +252,37 @@ function Contact() {
 
             background: "rgba(255,255,255,0.03)",
 
-            border:
-              "1px solid rgba(255,255,255,0.08)",
+            border: "1px solid rgba(255,255,255,0.08)",
 
             backdropFilter: "blur(10px)",
 
             transition: "all 0.3s ease",
 
             "&:hover": {
-              border:
-                "1px solid rgba(56,189,248,0.25)",
+              border: "1px solid rgba(56,189,248,0.25)",
             },
           }}
         >
+
           {/* CONTACT INFO */}
           <Stack
             spacing={3}
             sx={{
-              mb: 5,
+              mb: 0.7,
             }}
           >
+
+            {/* EMAIL */}
             <Box
+              component="a"
+              href="mailto:sivasakthi.dev2025@gmail.com"
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: 2,
+                textDecoration: "none",
+                cursor: "pointer",
               }}
             >
               <FaEnvelope
@@ -309,18 +293,26 @@ function Contact() {
               <Typography
                 sx={{
                   color: "#fff",
+                  "&:hover": {
+                    color: "#38BDF8",
+                  },
                 }}
               >
-                yourmail@gmail.com
+                sivasakthi.dev2025@gmail.com
               </Typography>
             </Box>
 
+            {/* PHONE */}
             <Box
+              component="a"
+              href="tel:+919025318113"
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: 2,
+                textDecoration: "none",
+                cursor: "pointer",
               }}
             >
               <FaPhone
@@ -331,18 +323,28 @@ function Contact() {
               <Typography
                 sx={{
                   color: "#fff",
+                  "&:hover": {
+                    color: "#38BDF8",
+                  },
                 }}
               >
-                +91 98765 43210
+                +91 90253 18113
               </Typography>
             </Box>
 
+            {/* LINKEDIN */}
             <Box
+              component="a"
+              href="https://www.linkedin.com/in/sivasakthi-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: 2,
+                textDecoration: "none",
+                cursor: "pointer",
               }}
             >
               <FaLinkedin
@@ -353,18 +355,28 @@ function Contact() {
               <Typography
                 sx={{
                   color: "#fff",
+                  "&:hover": {
+                    color: "#38BDF8",
+                  },
                 }}
               >
-                linkedin.com/in/yourprofile
+                linkedin.com/in/sivasakthi-dev
               </Typography>
             </Box>
 
+            {/* GITHUB */}
             <Box
+              component="a"
+              href="https://github.com/P-Sivasakthi?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: 2,
+                textDecoration: "none",
+                cursor: "pointer",
               }}
             >
               <FaGithub
@@ -375,132 +387,15 @@ function Contact() {
               <Typography
                 sx={{
                   color: "#fff",
+                  "&:hover": {
+                    color: "#38BDF8",
+                  },
                 }}
               >
-                github.com/yourusername
+                github.com/P-Sivasakthi
               </Typography>
             </Box>
-          </Stack>
 
-          {/* ACTION BUTTONS */}
-          <Stack
-            direction={{
-              xs: "column",
-              sm: "row",
-            }}
-            spacing={2}
-            justifyContent="center"
-          >
-            <Button
-              variant="contained"
-              href="mailto:yourmail@gmail.com"
-              startIcon={<FaEnvelope />}
-              sx={{
-                background: "#38BDF8",
-
-                color: "#0f172a",
-
-                fontWeight: 600,
-
-                textTransform: "none",
-
-                borderRadius: "12px",
-
-                px: 3,
-
-                "&:hover": {
-                  background: "#0EA5E9",
-                },
-              }}
-            >
-              Email Me
-            </Button>
-
-            <Button
-              variant="outlined"
-              href="tel:+919876543210"
-              startIcon={<FaPhone />}
-              sx={{
-                color: "#38BDF8",
-
-                borderColor: "#38BDF8",
-
-                fontWeight: 600,
-
-                textTransform: "none",
-
-                borderRadius: "12px",
-
-                px: 3,
-
-                "&:hover": {
-                  borderColor: "#0EA5E9",
-
-                  background:
-                    "rgba(56,189,248,0.08)",
-                },
-              }}
-            >
-              Call Me
-            </Button>
-
-            <Button
-              variant="outlined"
-              href="https://linkedin.com/in/yourprofile"
-              target="_blank"
-              startIcon={<FaLinkedin />}
-              sx={{
-                color: "#38BDF8",
-
-                borderColor: "#38BDF8",
-
-                fontWeight: 600,
-
-                textTransform: "none",
-
-                borderRadius: "12px",
-
-                px: 3,
-
-                "&:hover": {
-                  borderColor: "#0EA5E9",
-
-                  background:
-                    "rgba(56,189,248,0.08)",
-                },
-              }}
-            >
-              LinkedIn
-            </Button>
-
-            <Button
-              variant="outlined"
-              href="https://github.com/yourusername"
-              target="_blank"
-              startIcon={<FaGithub />}
-              sx={{
-                color: "#38BDF8",
-
-                borderColor: "#38BDF8",
-
-                fontWeight: 600,
-
-                textTransform: "none",
-
-                borderRadius: "12px",
-
-                px: 3,
-
-                "&:hover": {
-                  borderColor: "#0EA5E9",
-
-                  background:
-                    "rgba(56,189,248,0.08)",
-                },
-              }}
-            >
-              GitHub
-            </Button>
           </Stack>
         </Paper>
       </Container>

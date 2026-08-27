@@ -207,6 +207,8 @@ import {
   SiRedux,
   SiJenkins,
   SiGooglecloud,
+  SiLangchain,
+  SiLanggraph,
 } from "react-icons/si";
 
 const skills = [
@@ -234,6 +236,9 @@ const skills = [
   { name: "Playwright", icon: "🎭" },
   { name: "RAG", icon: "🤖" },
   { name: "LLM", icon: "🧠" },
+
+  {name: "Langchain", icon: <SiLangchain size={24} />},
+  {name: "Langgraph", icon: <SiLanggraph size={24} />},
 ];
 
 function Skills() {

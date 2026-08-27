@@ -341,6 +341,8 @@ import {
 
 import { motion } from "framer-motion";
 import LLMChatbotImage from "../../assets/OIP (1).jpeg";
+import AIToolAssistant from "../../assets/OIP (3).jpeg";
+
 
 import {
   FaGithub,
@@ -368,28 +370,27 @@ const projects = [
       liveDemo: "https://llm-chatbot-lac.vercel.app",
       github: "#",
     },
-    // {
-    //   title: "AI RAG Chatbot",
-    //   image:
-    //     "https://images.unsplash.com/photo-1677442136019-21780ecad995",
-    //   description:
-    //     "Retrieval-Augmented Generation chatbot that answers questions using custom company documents.",
-    //   techStack: [
-    //     "React.js",
-    //     "Node.js",
-    //     "LLM",
-    //     "RAG",
-    //     "Vector DB",
-    //   ],
-    //   implementation: [
-    //     "Document ingestion pipeline",
-    //     "Embedding generation",
-    //     "Vector search implementation",
-    //     "LLM response generation",
-    //   ],
-    //   liveDemo: "#",
-    //   github: "#",
-    // },
+    {
+      title: "AI Tool Assistant",
+      image:
+        AIToolAssistant,
+      description:
+        "LLM-powered AI agent routing user requests for weather, time, and calculations.",
+      techStack: [
+        "React.js",
+        "Node.js",
+        "Groq API",
+        "LangChain",
+        "LangGraph",
+      ],
+      implementation: [
+        "LLM intelligently routes user requests.",
+        "LangChain integrates weather, time, calculator tools.",
+        "LangGraph orchestrates the agent workflow.",
+      ],
+      liveDemo: "https://frontend-three-sepia-53.vercel.app/",
+      github: "#",
+    },
     // {
     //   title: "Lighthouse Audit Platform",
     //   image:
